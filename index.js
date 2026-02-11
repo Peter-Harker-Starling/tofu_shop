@@ -14,13 +14,7 @@ app.use(cookieParser());
 app.use(express.static('public')); //在Express設定「靜態檔案」
 
 app.get('/', async (req, res) => {
-    try {
-        const { data, error } = await supabase.from('admin').select('username');
-        if (error) throw error;
-        res.json(data);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    };
+    res.json({ message: "success" });
 });
 
 const PORT = process.env.PORT;
