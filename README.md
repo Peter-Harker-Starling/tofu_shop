@@ -10,10 +10,10 @@
 ## Live Demo
 
 - **Client（客戶端）**  
-  [https://tofu-7d64.onrender.com](https://tofu-7d64.onrender.com)
+  [https://tofu-shop.onrender.com](https://tofu-shop.onrender.com)
 
 - **Dashboard（後台）**  
-  [https://tofu-7d64.onrender.com/users/login](https://tofu-7d64.onrender.com/users/login)
+  [https://tofu-shop.onrender.com/admin/login](https://tofu-shop.onrender.com/admin/login)
 
 >  Render free 方案可能需要 **20–40 seconds** 冷啟動喚醒 (cold start).
 
