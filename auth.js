@@ -5,7 +5,7 @@ function auth(req, res, next) {
   const token = req.cookies.admin_token;
 
   if (!token) {
-    return res.redirect('/users/login');
+    return res.redirect('/admin/login');
   }
 
   try {
@@ -15,7 +15,7 @@ function auth(req, res, next) {
   } catch (err) {
     // 只要 token 出錯（過期或被竄改），清空並重新登入
     res.clearCookie('admin_token');
-    return res.redirect('/users/login');
+    return res.redirect('/admin/login');
   }
 }
 
