@@ -88,8 +88,7 @@ router.get('/select', async (req, res) => {
     if (phone) {
       const { data, error } = await supabase
         .from('orders')
-        .select(`id, total_amount, status, items (id, name, qty, price)
-        `)
+        .select(`id, total_amount, status, items (id, name, qty, price)`)
         .eq('phone', phone)
         .order('created_at', { ascending: false });
 
