@@ -63,6 +63,8 @@ router.post('/order', async (req, res) => {
         p_items: itemsToSave
     });
 
+    if (error) return res.status(500).send("訂單建立失敗");
+
     res.redirect('/tofu/success?status=done');
 
     } catch (err) {
